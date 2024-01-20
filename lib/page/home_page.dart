@@ -57,7 +57,7 @@ class _HomePage extends ConsumerState<HomePage> {
         scrollDirection: Axis.vertical,
         itemCount: videos.length,
         onPageChanged: (index) {
-          _setVideo(videos[index].videoFiles?[3].link ?? "");
+          _setVideo(videos[0].videoFiles?[index].link ?? "");
         },
         itemBuilder: (context, index) {
           return AspectRatio(
